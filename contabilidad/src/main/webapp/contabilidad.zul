@@ -1,0 +1,130 @@
+<zk>
+	<window apply="com.verbena.contabilidad.IndexController" width="100%" vflex="1">
+		<borderlayout>
+			<north size="33%" collapsible="true">
+				<borderlayout>
+					<north>
+						<menubar id="menubar">
+					    <menu label="Principal">
+					        <menupopup>
+					            <menuitem label="Totales" onClick="alert(self.label)" />
+					            <menuseparator />
+					            <menuitem label="Búsquedas" onClick="alert(self.label)" />
+					            <menuseparator />
+					            <menuitem label="Informes" onClick="alert(self.label)" />
+					        </menupopup>
+					    </menu>
+					</menubar>
+					</north>
+					<west>
+						<calendar id="calendar"></calendar>
+					</west>
+					<center style="background-color:#F5F5F5" >
+						<hlayout>
+		        			<vlayout>
+			        			<label value="Total Ingresos Bar Mensuales" style="color:#00BFFF;font-weight: bold;text-decoration:underline;font-size:medium;"></label>
+			        			<label id="totalIngresos" style="font-weight: bold;font-size:medium;"></label>
+			        			<label value="Total Gastos Bar Mensuales" style="color:#00BFFF;font-weight: bold;text-decoration:underline;font-size:medium;"></label>
+			        			<label id="totalGastos" style="font-weight: bold;font-size:medium;"></label>
+			        			<label value="Total Gastos Fijos" style="color:#00BFFF;font-weight: bold;text-decoration:underline;font-size:medium;"></label>
+			        			<label id="totalGastosFijo" style="font-weight: bold;font-size:medium;"></label>
+			        			<label value="Saldo Final" style="color:#00BFFF;font-weight: bold;text-decoration:underline;font-size:medium;"></label>
+			        			<label id="saldoFinal" style="font-weight: bold;font-size:medium;"></label>
+		        			</vlayout>
+		        			<vlayout>
+			        			<label value="Saldo Final Extra" style="color:#00BFFF;font-weight: bold;text-decoration:underline;font-size:medium;"></label>
+			        			<label id="saldoFinalB" style="font-weight: bold;font-size:medium;"></label>
+		        			</vlayout>
+						</hlayout>
+					</center>
+				</borderlayout>
+			</north>
+			<west>
+				<vlayout>
+					<separator></separator>
+					<hlayout>
+						<label value="Concepto" ></label>
+						<combobox id="cmbxConcepto" hflex="1"></combobox>
+					</hlayout>
+					<hlayout>
+						<label value="Importe"></label>
+						<doublebox id="dblbxImporte" hflex="1"></doublebox>
+					</hlayout>
+					<hlayout>
+						<radiogroup>
+							<radio id="rdSalida" label="Salida" checked="true"></radio>
+							<radio id="rdEntrada" label="Entrada"></radio>
+						</radiogroup>
+					</hlayout>
+					<hlayout>
+						<radiogroup>
+							<radio id="rdEfectivo" label="Efectivo" checked="true"></radio>
+							<radio id="rdTarjeta" label="Tarjeta"></radio>
+						</radiogroup>
+					</hlayout>
+					<hlayout>
+						<radiogroup>
+							<radio id="rdA" label="A" checked="true"></radio>
+							<radio id="rdB" label="B"></radio>
+						</radiogroup>
+					</hlayout>
+					<radio id="rdGastoFijo" label="Gasto Fijo"></radio>
+					<button id="add" label="Añadir Importe"></button>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<separator></separator>
+					<hlayout>
+						<label value="Plantilla" ></label>
+						<combobox id="cmbxPlantilla" hflex="1"></combobox>
+					</hlayout>
+					<hlayout>
+						<radiogroup>
+							<radio id="rdManiana" label="Mañana" checked="true"></radio>
+							<radio id="rdTarde" label="Tarde"></radio>
+							<radio id="rdNoche" label="Noche"></radio>
+						</radiogroup>
+					</hlayout>
+					<button id="addPlantilla" label="Añadir Plantilla"></button>
+				</vlayout>
+			</west>
+			<center autoscroll="true">
+				<vlayout>
+				<listbox id="entradasListbox" rows="2">
+					<listhead>
+						<listheader label="Concepto"></listheader>
+						<listheader label="Cuantía"></listheader>
+						<listheader label="Tarjeta/Efectivo"></listheader>
+						<listheader label="Extra"></listheader>
+						<listheader label="Gasto Fijo"></listheader>
+					</listhead>
+				</listbox>
+				<listbox id="salidasListbox" rows="5" mold="paging" pageSize="5">
+					<listhead>
+						<listheader label="Concepto"></listheader>
+						<listheader label="Cuantía"></listheader>
+						<listheader label="Tarjeta/Efectivo"></listheader>
+						<listheader label="Extra"></listheader>
+						<listheader label="Gasto Fijo"></listheader>
+					</listhead>
+				</listbox>
+				<listbox id="plantillaListbox">
+					<listhead>
+						<listheader label="Nombre"></listheader>
+						<listheader label="Turno"></listheader>
+					</listhead>
+				</listbox>
+			</vlayout>
+			</center>
+		</borderlayout>
+	</window>
+</zk>

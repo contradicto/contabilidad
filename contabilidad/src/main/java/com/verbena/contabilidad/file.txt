@@ -1,0 +1,88 @@
+Aceite,false
+Achoas,false
+Afilado cuchillos,false
+Agua,false
+Aguacate,false
+Ajos Tiernos,false
+Alargador,false
+Albahaca,false
+Alcachofas,false
+Almendras,false
+Anchoas,false
+Apio,false
+Atún,false
+Bacalao,false
+Boquerones,false
+Butano,false
+Café,false
+Carne,false
+Carne Porcina,false
+Casera,false
+Cerveza,false
+Chapatas,false
+Cloumi,false
+Coca Cola,false
+Congelados,false
+Cuaderno,false
+Cuajada,false
+Cuchillos,false
+Desatascador,false
+Desengrasante,false
+Detergentes,false
+Districam,false
+Embutidos,false
+Enchufe,false
+Esencia Vainilla,false
+Espárragos,false
+Espumosos Martínez,false
+Estanterías,false
+Fairy,false
+Farmacia,false
+Ferretería,false
+Fontanero,false
+Frutas,false
+Helado,false
+Hielo,false
+Hojaldre,false
+Hostemur,false
+Huevos,false
+Jamón,false
+Ladrón,false
+Lavadora,false
+Lavavajillas,false
+Leche,false
+Limones,false
+Longaniza,false
+Makro,false
+Manteles,false
+Menaje,false
+Morcillas,false
+Nata,false
+Pan,false
+Pan Moreno,false
+Patatas,false
+Pedro Ximénez,false
+Peine,false
+Persianas,false
+Pescado,false
+Plantas,false
+Pollo,false
+Queso,false
+Rallador,false
+Redisa,false
+Regleta,false
+Rosquillas,false
+Salchicha,false
+Sardinas,false
+Sepia,false
+Servilletas,false
+Setas,false
+Taladro,false
+Tiza,false
+Tomate,false
+Trapos,false
+Vemú,false
+Verduras,false
+Vino,false
+Yogurt,false
+Zanahorias,false
